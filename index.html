@@ -5,7 +5,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<meta name='description' content='Personal homepage of Amir R. Asadi, Ph.D. candidate in Electrical and Computer Engineering at Princeton University.'>
+		<meta name='description' content='Personal homepage of Amir R. Asadi, Postdoctoral Research Associate in the Statistical Laboratory at the University of Cambridge.'>
 	</head>
 	<body class="is-preload">
 
@@ -19,10 +19,6 @@
 							<!-- Header -->
 								<header id="header">
 									<a href="index.html" class="logo"><strong>My Personal Homepage</strong> </a>
-									<ul class="icons">
-										<li><a href="https://scholar.google.com/citations?user=KrEcgJ8AAAAJ&hl=en&oi=ao" target="_blank" class="icon brands fa-google"><span class="label">Google Scholar</span></a></li>
-										<li><a href="https://github.com/ARAsadi" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
 								</header>
 
 							<!-- Banner -->
@@ -30,86 +26,19 @@
 									<div class="content">
 										<header>
 											<h1>Amir R. Asadi<br /> </h1>
-											 <!-- from Princeton!</h1>  -->
-											<p style="color:#e77500";>Department of Electrical and Computer Engineering, </br> Princeton University</p>
+											<p style="color:#2986cc";>Statistical Laboratory,  </br> University of Cambridge</p>
 										</header>
-										<p>My name is Amir Reza Asadi, and I am a final year Ph.D. candidate in the Department of Electrical and Computer Engineering at Princeton University. I am fortunate to be advised by <a href="https://people.epfl.ch/emmanuel.abbe?lang=en" target="_blank">Emmanuel Abbe</a>. Prior to Princeton, I received B.Sc. degrees in Electrical Engineering and in Mathematics from Sharif
-											University of Technology, both in 2015. My research is on the interface of machine learning, information theory and high-dimensional probability. </p>
+										<p>I am a Postdoctoral Research Associate at the Statistical Laboratory, University of Cambridge, and a Postdoctoral Affiliate of Trinity College. I obtained my Ph.D. in the Department of Electrical and Computer Engineering at Princeton University in 2021. Prior to that,
+											I got B.Sc. degrees in Mathematics and in Electrical Engineering at Sharif University of Technology, both in 2015. My research is on machine learning, information theory, and differential privacy. </p>
 
-								
+
 										<ul class="actions">
-											<li><a href="./files/CV.pdf" target="_blank" class="button big">Download CV</a></li>
+											<li><a href="./files/CV.pdf" target="_blank" class="button big">Brief CV</a></li>
 										</ul>
 									</div>
 									<span class="image object">
-										<img src="./images/AmirPhoto.jpg" alt="Photo of Amir R. Asadi" />
+										<img src="./images/Amir_photo.jpg" alt="Photo of Amir R. Asadi" />
 									</span>
-								</section>
-
-							<!-- Section -->
-								<section id="research">
-									<header class="major">
-										<h2>Research</h2>
-									</header>
-									<div class="container">
-										<article id="chaining_mutual_information">
-											<div class="row gtr-50 gtr-uniform">
-											<div class="col-3 col-6-medium col-12-xsmall"><span class="image fit"><img src="./images/CMI.png" alt="Chaining mutual information" /></span></div>
-											</div><br />
-
-											<h3>Chaining Mutual Information</h3>
-											<p>Using information-theoretic ideas, in <a href="https://papers.nips.cc/paper/2018/hash/8d7628dd7a710c8638dbd22d4421ee46-Abstract.html" target="_blank">this paper</a> (for a quick-to-read summary, see <a href="./files/CMI_summary.pdf" target="_blank" >this</a>), we extend the probabilistic technique of <em> chaining </em> into the technique of <em> chaining mutual information </em> to obtain <em> multiscale </em> and <em> algorithm-dependent </em> generalization bounds in machine learning. Roughly speaking, this is achieved by replacing <em> metric entropy</em> of chaining with mutual information. <span id="dots1"></span><span class="more" id="more1"> <br>
-												Chaining - originated from the work of Kolmogorov - is a powerful multiscale technique in high-dimensional probability used for bounding the expected suprema of random processes.
-													Though multiscale and elegant, due to its nature, the technique's applications to generalization theory of machine learning has been mostly limited to uniform bounding such as the VC-dimension bound which is known to be vacous for neural networks. Much more recently, advances in generalization theory
-													such as PAC-Bayes and mutual information bounds have given rise to algorithm-dependent bounds on generalization error based on notions and tools from information theory. Combining these probabilistic and information-theoretic ideas,
-													we show how to extend chaining into the technique of chaining mutual information to obtain generalization bounds which are both multiscale and algorithm-dependent. We show how the resultant bound can be much tighter than each of the chaining or mutual information bounds.
-													</span> <br /><br />
-											<button onclick="showMoreLess('1')" id="myBtn1">Read more</button> <br />
-												</p>
-										</article>
-										<article id="multiscale_Gibbs_distribution">
-											<div class="row gtr-50 gtr-uniform">
-												<div class="col-5 col-8-medium col-12-xsmall"><span class="image fit"><img src="./images/MultiscaleGibbs.png" alt="Multiscale Gibbs distribution" /></span></div>
-											</div><br />
-											<h3>Multiscale-Entropic Regularization of Neural Networks</h3>
-											<p>By substituting the well-known <em> entropic regularization </em> of machine learning with <em> multiscale-entropic regularization</em>, in <a href="https://jmlr.org/papers/v21/19-794.html" target="_blank">this paper</a>, we extend the celebrated Gibbs-Boltzmann distribution into a multiscale setting
-												and show how it naturally applies to the multilevel architecture of neural networks. <span id="dots2"></span><span class="more" id="more2"> <br>
-											The key notion used in the powerful technique of chaining in high dimensional probability is <em>successive refinement</em> of the index set. In a seemingly different world, neural networks are machine learning models that operate
-											based on the notion of <em>succesive processing</em> of the input data. Can one use the intrinsic power of chaining into devising training algorithms for neural networks along with performance guarantees? We provide a solution to this
-										problem by using a fundamental tool of information theory - the entropic chain rule - and show how this leads to generalizing the well-known Gibbs-Boltzmann distribution to a multiscale setting. This approach towards training neural networks is based on the entropic chain rule rather than the chain rule of derivatives (as in backpropogation).
-											</span> <br /><br />
-											<button onclick="showMoreLess(2)" id="myBtn2">Read more</button>
-										</p>
-										</article>
-										<article id="maximum_multiscale_entropy">
-											<div class="row gtr-50 gtr-uniform">
-												<div class="col-3 col-6-medium col-12-xsmall"><span class="image fit"><img src="./images/MaxMultiscaleEnt.png" alt="Maximum multiscale entropy" /></span></div>
-											</div><br />
-											<h3>Maximum Multiscale Entropy</h3>
-											<p>In <a href="https://arxiv.org/abs/2006.14614" target="_blank">this paper</a>, we extend the widely known <em> maximum entropy </em> problem into <em> maximum multiscale entropy</em> by incorporating the notion of <em>scale</em>. In particular, we show that for various notions of entropy and scale, given a mean constraint, the distribution that maximizes entropies at multiple scales simultaneously is precisely obtained with a procedure with an anology
-												to the <em>renormalization group</em> of theoretical physics and a Bayesian expansion thereof. We further show applications for neural networks.<span id="dots3"></span><span class="more" id="more3"> <br>
-													A well-known result across information theory, machine learning, and statistical physics shows that the maximum entropy distribution under a mean constraint has an exponential form called the Gibbs-Boltzmann distribution.
-													 This fact, which dates back to the work of Jaynes in 1957, has many applications such as in statistical inference and density estimation. We investigate a generalization of this result
-												 into a multiscale setting. One of the most conspicous properties of our world is the great variety of length scales within its structure. The data that one obtains from nature and its accuracy depends on the scale through which one observes the world. We blend the notions of entropy (uncertainty) and scale by defining <em>multiscale entropies</em> as the linear combination of entropies of a system at different length scales. Then, for different entropies and arbitrary scale transformations, we show that the distribution which maximizes multiscale entropies under a mean constraint is characterized by a procedure with analogy to the renormalization group procedure of statistical physics.
-												 Renormalization group is a powerful multiscale apparatus used in the study of problems such as critical phenomena in statistical physics as well as problems in probability theory such as universality. These results extend our previous results on the multiscale Gibbs distribution. For the application of neural networks we further discuss excess risk bounds for that distribution.
-											</span> <br /><br />
-											<button onclick="showMoreLess(3)" id="myBtn3">Read more</button>
-										</p>
-										</article>
-										<article id="community_detection">
-											<div class="row gtr-50 gtr-uniform">
-												<div class="col-3 col-6-medium col-12-xsmall"><span class="image fit"><img src="./images/Chernoff.png" alt="CH-divergence and Chernoff information" /></span></div>
-											</div><br />
-											<h3>Community Detection and Compression</h3>
-											<p>In <a href="https://ieeexplore.ieee.org/abstract/document/8006796" target="_blank">this paper</a>, we investigate the fundamental limits for compressing data on graphs while exploiting dependencies due to community structures in the graph.
-												This is derived in part by obtaining the threshold for exact recovery in stochastic block models with strong side-information, a result of independent interest, which extends the CH-divergence threshold using <em>Chernoff information</em>.<span id="dots4"></span><span class="more" id="more4"> <br>
-													We show that the CH-divergence, which has been shown to be fundamental in characterizing the exact recovery threshold of stochastic block models, is equivalent to Chernoff information between multivariate Poisson distributions. We then show how the exact recovery
-													threshold with side-information can be expressed with Chernoff information.
-													</span> <br /><br />
-											<button onclick="showMoreLess(4)" id="myBtn4">Read more</button>
-										</p>
-										</article>
-									</div>
 								</section>
 
 								<section id="publications">
@@ -118,14 +47,14 @@
 									</header>
 									<div class="container">
 										<ul>
-											<li> <b> Asadi, A. R. </b> & Abbe, E. (2021). <strong> A Self-similarity Approach to Neural Network Learning. </strong> (In Preparation) </li>
-		 									<li> <b> Asadi, A. R. </b>, Abbe, E. & Verdú, S. (2021). <strong> Information-Theoretic Chaining Techniques. </strong> (In Preparation). </li>
-											<li> <b> Asadi, A. R. </b> & Abbe, E. (2020). <strong> Maximum Multiscale Entropy and Neural Network Regularization. </strong> <i> arXiv preprint arXiv:2006.14614. </i> <a href="https://arxiv.org/abs/2006.14614" target="_blank">[Link]</a> </li>
-											<li> <b> Asadi, A. R. </b> & Abbe, E. (2020). <strong> Chaining Meets Chain Rule: Multilevel Entropic Regularization and Training of Neural Networks. </strong> <i> Journal of Machine Learning Research </i>, 21(139), 1-32. <a href="https://jmlr.org/papers/v21/19-794.html" target="_blank">[Link]</a> </li>
- 											<li> <b> Asadi, A. R. </b>, Abbe, E., & Verdú, S. (2018). <strong> Chaining Mutual Information and Tightening Generalization Bounds. </strong> <i> Advances in Neural Information Processing Systems (NeurIPS) </i>, pp. 7245-7254 <a href="https://papers.nips.cc/paper/2018/hash/8d7628dd7a710c8638dbd22d4421ee46-Abstract.html" target="_blank">[Link]</a> </li>
- 											<li> <b> Asadi, A. R. </b> , Abbe, E., & Verdú, S. (2017). <strong> Compressing data on graphs with clusters. </strong> <i> IEEE International Symposium on Information Theory (ISIT) </i> (pp. 1583-1587) <a href="https://ieeexplore.ieee.org/abstract/document/8006796" target="_blank">[Link]</a> </li>
-    									<li>  Asadi,  M. <b> Asadi, A. R. </b> (2014) <strong> On the Failure Probability of Used Coherent Systems. </strong> <i> Communications in Statistics, Theory and Methods </i>, Vol. 43, pp. 2468-2475. <a href="https://www.tandfonline.com/doi/full/10.1080/03610926.2013.830744" target="_blank">[Link]</a> </li>
-    									<li> <b> Asadi, A. R. </b> (2013), <strong> Problem 96.J with solution. </strong>  <i> The Mathematical Gazette </i>, Vol. 97, No. 539, pp. 345-346, United Kingdom. <a href="https://www.jstor.org/stable/24496830" target="_blank">[Link]</a> </li>
+											<li> A. Pensia, <b> A. R. Asadi </b>, V. Jog & P. Loh (2023). <strong> Simple Binary Hypothesis Testing under Local Differential Privacy and Communication Constraints. </strong> <i> arXiv preprint arXiv:2301.03566. </i> <a href="https://arxiv.org/abs/2301.03566" target="_blank">[Link]</a> </li>
+		 									<li> <b> A. R. Asadi </b>. (2022) <strong> An Entropy-Based Model for Hierarchical Learning. </strong> <i> arXiv preprint arXiv:2212.14681. </i> <a href="https://arxiv.org/abs/2212.14681" target="_blank">[Link]</a> </li>
+											<li> <b> A. R. Asadi </b> & E. Abbe. (2020) <strong> Maximum Multiscale Entropy and Neural Network Regularization. </strong> <i> arXiv preprint arXiv:2006.14614. </i> <a href="https://arxiv.org/abs/2006.14614" target="_blank">[Link]</a> </li>
+											<li> <b> A. R. Asadi </b> & E. Abbe. (2020) <strong> Chaining Meets Chain Rule: Multilevel Entropic Regularization and Training of Neural Networks. </strong> <i> Journal of Machine Learning Research </i>, 21(139), 1-32. <a href="https://jmlr.org/papers/v21/19-794.html" target="_blank">[Link]</a> </li>
+ 											<li> <b> A. R. Asadi </b>, E. Abbe, & S. Verdú. (2018) <strong> Chaining Mutual Information and Tightening Generalization Bounds. </strong> <i> Advances in Neural Information Processing Systems (NeurIPS) </i>, pp. 7245-7254 <a href="https://papers.nips.cc/paper/2018/hash/8d7628dd7a710c8638dbd22d4421ee46-Abstract.html" target="_blank">[Link]</a> </li>
+ 											<li> <b> A. R. Asadi </b>, E. Abbe, & S. Verdú. (2017) <strong> Compressing Data on Graphs with Clusters. </strong> <i> IEEE International Symposium on Information Theory (ISIT) </i> (pp. 1583-1587) <a href="https://ieeexplore.ieee.org/abstract/document/8006796" target="_blank">[Link]</a> </li>
+    									<li>  M. Asadi, <b> A. R. Asadi </b>. (2014) <strong> On the Failure Probability of Used Coherent Systems. </strong> <i> Communications in Statistics, Theory and Methods </i>, Vol. 43, pp. 2468-2475. <a href="https://www.tandfonline.com/doi/full/10.1080/03610926.2013.830744" target="_blank">[Link]</a> </li>
+    									<li> <b> A. R. Asadi </b>. (2013) <strong> Problem 96.J with solution. </strong>  <i> The Mathematical Gazette </i>, Vol. 97, No. 539, pp. 345-346, United Kingdom. <a href="https://www.jstor.org/stable/24496830" target="_blank">[Link]</a> </li>
 										</ul>
 									</div>
 									<ul class="actions">
@@ -142,8 +71,8 @@
 											<article>
 												<span class="image fit"><img src="./images/Sharif.png" alt="Sharif University of Technology logo" /></span>
 												<div class="inner">
-													<h4>B.Sc. in Electrical Engineering (Communications)</h4>
 													<h4>B.Sc. in Mathematics</h4>
+													<h4>B.Sc. in Electrical Engineering (Communications)</h4>
 													<p><i>September 2010 - August 2015</i></p>
 												</div>
 											</article>
@@ -154,9 +83,9 @@
 												<span class="image fit"><img src="./images/PU.png" alt="Princeton University logo" /></span>
 												<div class="inner">
 													<h4>M.A. in Electrical Engineering</h4>
-													<p><i>September 2015 - July 2017</i></p>
+													<p><i>September 2015 - September 2017</i></p>
 													<h4> Ph.D. in Electrical and Computer Engineering</h4>
-													<p><i>August 2017 - Present</i></p>
+													<p><i>September 2017 - July 2021</i></p>
 												</div>
 											</article>
 
@@ -197,45 +126,12 @@
 									</div>
 								</section>
 
-								<section id="teaching_assistantships">
-									<header class="major">
-										<h2>Teaching Assistantships</h2>
-									</header>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Course Name</th>
-													<th>Semester</th>
-													<th>Code</th>
-													<th>Instructor</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Transmission and Compression of Information</td>
-													 <td> Spring 2017-2018</td>
-														<td>ELE\APC 486</td>
-													 <td> Prof. Emmanuel Abbe</td>
-												</tr>
-												<tr>
-													<td>Probability in High Dimension</td>
-													 <td> Fall 2018-2019</td>
-														<td>ORF\APC 550</td>
-													 <td> Prof. Ramon van Handel</td>
-												</tr>
-												</tbody>
-										</table>
-									</div>
-									</section>
-
 								<section id="personal">
 									<header class="major">
 										<h2>Personal</h2>
 									</header>
 									<div class="container">
-										I like exercising and watching sports, especially football (soccer), Formula 1 and tennis. I play table tennis quite well. I enjoy reading Persian literature such as poetry by <a href="https://en.wikipedia.org/wiki/Omar_Khayyam" target="_blank">Khayyam</a>,
-										<a href="https://en.wikipedia.org/wiki/Hafez" target="_blank">Hafez</a>, and <a href="https://en.wikipedia.org/wiki/Saadi_Shirazi" target="_blank">Saadi</a> (whom the father of thermodynamics, <a href="https://en.wikipedia.org/wiki/Nicolas_L%C3%A9onard_Sadi_Carnot" target="_blank">Sadi Carnot</a>, is named after).
+										I like exercising and watching sports, especially football (soccer), Formula 1 and tennis. I play table tennis quite well. I enjoy reading Persian literature such as poetry by <a href="https://en.wikipedia.org/wiki/Saadi_Shirazi" target="_blank">Saadi</a>, <a href="https://en.wikipedia.org/wiki/Hafez" target="_blank">Hafez</a>, and <a href="https://en.wikipedia.org/wiki/Omar_Khayyam" target="_blank">Khayyam</a>.
 									</div>
 								</section>
 						</div>
@@ -251,21 +147,10 @@
 										<h2>Menu</h2>
 									</header>
 									<ul>
-										<li><a href="#research">Homepage</a></li>
-										<li>
-											<span class="opener">Research</span>
-											<ul>
-												<li><a href="#chaining_mutual_information">Chaining Mutual Information</a></li>
-												<li><a href="#multiscale_Gibbs_distribution">Multiscale Gibbs Distribution and Neural Networks</a></li>
-												<li><a href="#maximum_multiscale_entropy">Maximum Multiscale Entropy</a></li>
-												<li><a href="#community_detection">Community Detection and Compression</a></li>
-											</ul>
-										</li>
 										<li><a href="#publications">Publications</a></li>
 										<li><a href="#education">Education</a></li>
 										<li><a href="#awards">Awards</a></li>
 										<li><a href="#talks">Talks</a></li>
-										<li><a href="#teaching_assistantships">Teaching Assistantships</a></li>
 										<li><a href="#personal">Personal</a></li>
 										</ul>
 								</nav>
@@ -276,10 +161,8 @@
 										<h2>Get in touch</h2>
 									</header>
 									<ul class="contact">
-										<li class="icon solid fa-envelope"> aasadi [at] xyz.edu, <br /> xyz = princeton. <br />
+										<li class="icon solid fa-envelope"> aa2345 [at] xyz.ac.uk, <br /> xyz = cam <br />
 																												amirreza.asadi [at] gmail.com. </li>
-										<li class="icon solid fa-home">Department of Electrical and Computer Engineering, 41 Olden St, <br />
-										Princeton, New Jersey 08544 <br /> USA</li>
 									</ul>
 								</section>
 
